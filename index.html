@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1300, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Erstellen Sie Ihre Website</title>
+        <link href="http://www.5minutenwebseite.de/template/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="http://www.5minutenwebseite.de/template/vendor/components/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
+        <link href="http://www.5minutenwebseite.de/template/vendor/components/font-awesome/css/brands.min.css" rel="stylesheet" />
+        <link href="http://www.5minutenwebseite.de/template/vendor/components/font-awesome/css/solid.min.css" rel="stylesheet" />
+        <style>
+            .red {
+                border: solid 1px red;
+            }
+            .input-highlight-area {
+                background-color: red;
+                opacity: 60%;
+                z-index: 20;
+                display: none;
+            }
+            .block-highlight-area {
+                background-color: mediumpurple;
+                opacity: 60%;
+                z-index: 10;
+                display: none;
+            }
+            label {
+                cursor: pointer;
+            }
+            form::-webkit-scrollbar { /* 1 - скроллбар */
+                width: 4px;
+                height: 4px;
+                background-color: #FFFFFF;
+            }
+
+            form::-webkit-scrollbar-button { /* 2 - кнопка */
+
+            }
+
+            form::-webkit-scrollbar-track { /* 3 - трек */
+            }
+
+            form::-webkit-scrollbar-track-piece { /* 4 - видимая часть трека */
+            }
+
+            form::-webkit-scrollbar-thumb { /* 5 - ползунок */
+                border-radius: 2px;
+                background-color: mediumpurple;
+            }
+
+            form::-webkit-scrollbar-corner { /* 6 - уголок */
+            }
+
+            form::-webkit-resizer { /* 7 - изменение размеров */
+            }
+        </style>
+    </head>
+    <body>
+        <main style="width: 1300px; margin: 20px auto; position: relative;">
+            <header class="">
+                <h3 style="margin-bottom: 30px;">
+                    <a class="btn btn-primary" href="index.php" role="button"><i class="fa fa-backward"></i></a> &nbsp; My-DAY
+                </h3>
+            </header>
+            <section class="main" style="display: flex; position: relative;">
+                <div style="width: 820px; padding: 0;">
+                    <img id="screenshot" src="http://www.5minutenwebseite.de/template/screenshots/My-DAY.png" style="width: 800px; height: 2765px;" alt="My-DAY" title="My-DAY" />
+                </div>
+                <aside style="width: 480px; padding: 0; position: relative; height: auto;">
+                    <div class="container-fluid" style="position:-webkit-sticky; position: sticky; top: 90px; width: inherit; height: calc(100vh - 135px);">
+                        <form method="post" style="overflow-y: scroll; height: inherit;" action="generate.php">
+                            <input type="hidden" name="landing-id" value="My-DAY" />
+
+                            <h3>Erstellen Sie Ihre Website</h3>
+                            <p>Füllen Sie die erforderlichen Formularfelder aus und folgen Sie den Anweisungen!</p>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="67" data-y="24" data-id="block-Firma">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-Firma" data-id="block-Firma" value="Firma" disabled />
+                                        <label class="form-check-label ml-2 pt-1" for="block-Firma">Seitename</label>
+                                    </div>
+                                    <div id="area-block-Firma" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 160px; height: 32px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-Firma-Firmenname">Namen des Unternehmens:</label>
+                                    <input class="form-control input-highlighter block-Firma--input" type="text" id="input-Firma-Firmenname" name="input-Firma-Firmenname" data-x="67" data-y="24" data-id="input-Firma-Firmenname" />
+                                </div>
+                                <div id="area-input-Firma-Firmenname" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 160px; height: 32px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="328" data-y="23" data-id="block-menue">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-menue" data-id="block-menue" value="menue" disabled />
+                                        <label class="form-check-label ml-2 pt-1" for="block-menue">Menü</label>
+                                    </div>
+                                    <div id="area-block-menue" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 452px; height: 34px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-menue-menue-1">menü 1:</label>
+                                    <input class="form-control input-highlighter block-menue--input" type="text" id="input-menue-menue-1" name="input-menue-menue-1" data-x="463" data-y="24" data-id="input-menue-menue-1" />
+                                </div>
+                                <div id="area-input-menue-menue-1" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 54px; height: 33px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-menue-menue-2">menü 2:</label>
+                                    <input class="form-control input-highlighter block-menue--input" type="text" id="input-menue-menue-2" name="input-menue-menue-2" data-x="517" data-y="24" data-id="input-menue-menue-2" />
+                                </div>
+                                <div id="area-input-menue-menue-2" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 54px; height: 33px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-menue-menue-3">menü 3:</label>
+                                    <input class="form-control input-highlighter block-menue--input" type="text" id="input-menue-menue-3" name="input-menue-menue-3" data-x="574" data-y="24" data-id="input-menue-menue-3" />
+                                </div>
+                                <div id="area-input-menue-menue-3" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 61px; height: 33px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-menue-menue-4">menü 4:</label>
+                                    <input class="form-control input-highlighter block-menue--input" type="text" id="input-menue-menue-4" name="input-menue-menue-4" data-x="635" data-y="24" data-id="input-menue-menue-4" />
+                                </div>
+                                <div id="area-input-menue-menue-4" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 42px; height: 33px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-menue-menue-5">menü 5:</label>
+                                    <input class="form-control input-highlighter block-menue--input" type="text" id="input-menue-menue-5" name="input-menue-menue-5" data-x="678" data-y="24" data-id="input-menue-menue-5" />
+                                </div>
+                                <div id="area-input-menue-menue-5" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 49px; height: 33px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="58" data-y="0" data-id="block-info">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-info" data-id="block-info" value="info" disabled />
+                                        <label class="form-check-label ml-2 pt-1" for="block-info">Infoblock oben Links</label>
+                                    </div>
+                                    <div id="area-block-info" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 255px; height: 22px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-info-email">E-Mail:</label>
+                                    <input class="form-control input-highlighter block-info--input" type="text" id="input-info-email" name="input-info-email" data-x="69" data-y="0" data-id="input-info-email" />
+                                </div>
+                                <div id="area-input-info-email" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 113px; height: 22px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-info-telefon">Telefon:</label>
+                                    <input class="form-control input-highlighter block-info--input" type="text" id="input-info-telefon" name="input-info-telefon" data-x="183" data-y="0" data-id="input-info-telefon" />
+                                </div>
+                                <div id="area-input-info-telefon" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 93px; height: 22px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="634" data-y="0" data-id="block-socialtwitter">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-socialtwitter" data-id="block-socialtwitter" value="socialtwitter" />
+                                        <label class="form-check-label ml-2 pt-1" for="block-socialtwitter">Twitter</label>
+                                    </div>
+                                    <div id="area-block-socialtwitter" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-socialtwitter-twitter">Fügen Sie den gewünschten Link in Ihr Twitter:</label>
+                                    <input
+                                        class="form-control input-highlighter block-socialtwitter--input"
+                                        type="text"
+                                        id="input-socialtwitter-twitter"
+                                        name="input-socialtwitter-twitter"
+                                        data-x="634"
+                                        data-y="0"
+                                        data-id="input-socialtwitter-twitter"
+                                    />
+                                </div>
+                                <div id="area-input-socialtwitter-twitter" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="657" data-y="0" data-id="block-socialfacebook">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-socialfacebook" data-id="block-socialfacebook" value="socialfacebook" />
+                                        <label class="form-check-label ml-2 pt-1" for="block-socialfacebook">Facebook</label>
+                                    </div>
+                                    <div id="area-block-socialfacebook" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-socialfacebook-facebook">Fügen Sie den gewünschten Link in Ihr Facebook:</label>
+                                    <input
+                                        class="form-control input-highlighter block-socialfacebook--input"
+                                        type="text"
+                                        id="input-socialfacebook-facebook"
+                                        name="input-socialfacebook-facebook"
+                                        data-x="657"
+                                        data-y="0"
+                                        data-id="input-socialfacebook-facebook"
+                                    />
+                                </div>
+                                <div id="area-input-socialfacebook-facebook" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="680" data-y="0" data-id="block-socialinstagram">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-socialinstagram" data-id="block-socialinstagram" value="socialinstagram" />
+                                        <label class="form-check-label ml-2 pt-1" for="block-socialinstagram">Instagram</label>
+                                    </div>
+                                    <div id="area-block-socialinstagram" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-socialinstagram-instagram">Fügen Sie den gewünschten Link in Ihr Instagram:</label>
+                                    <input
+                                        class="form-control input-highlighter block-socialinstagram--input"
+                                        type="text"
+                                        id="input-socialinstagram-instagram"
+                                        name="input-socialinstagram-instagram"
+                                        data-x="680"
+                                        data-y="0"
+                                        data-id="input-socialinstagram-instagram"
+                                    />
+                                </div>
+                                <div id="area-input-socialinstagram-instagram" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="705" data-y="0" data-id="block-sociallinkedin">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-sociallinkedin" data-id="block-sociallinkedin" value="sociallinkedin" />
+                                        <label class="form-check-label ml-2 pt-1" for="block-sociallinkedin">Linkedin</label>
+                                    </div>
+                                    <div id="area-block-sociallinkedin" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-sociallinkedin-linkedin">Fügen Sie den gewünschten Link in Ihr linkedin:</label>
+                                    <input
+                                        class="form-control input-highlighter block-sociallinkedin--input"
+                                        type="text"
+                                        id="input-sociallinkedin-linkedin"
+                                        name="input-sociallinkedin-linkedin"
+                                        data-x="705"
+                                        data-y="0"
+                                        data-id="input-sociallinkedin-linkedin"
+                                    />
+                                </div>
+                                <div id="area-input-sociallinkedin-linkedin" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="0" data-y="58" data-id="block-Slider">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-Slider" data-id="block-Slider" value="Slider" disabled />
+                                        <label class="form-check-label ml-2 pt-1" for="block-Slider">Block Slider</label>
+                                    </div>
+                                    <div id="area-block-Slider" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 368px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-Slider-Slidertitel">Titel:</label>
+                                    <input class="form-control input-highlighter block-Slider--input" type="text" id="input-Slider-Slidertitel" name="input-Slider-Slidertitel" data-x="67" data-y="259" data-id="input-Slider-Slidertitel" />
+                                </div>
+                                <div id="area-input-Slider-Slidertitel" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 454px; height: 37px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-Slider-Slideruntertitel">Untertitel:</label>
+                                    <input
+                                        class="form-control input-highlighter block-Slider--input"
+                                        type="text"
+                                        id="input-Slider-Slideruntertitel"
+                                        name="input-Slider-Slideruntertitel"
+                                        data-x="67"
+                                        data-y="296"
+                                        data-id="input-Slider-Slideruntertitel"
+                                    />
+                                </div>
+                                <div id="area-input-Slider-Slideruntertitel" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 454px; height: 28px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-Slider-Sliderbutton">Name des buttons:</label>
+                                    <input
+                                        class="form-control input-highlighter block-Slider--input"
+                                        type="text"
+                                        id="input-Slider-Sliderbutton"
+                                        name="input-Slider-Sliderbutton"
+                                        data-x="75"
+                                        data-y="334"
+                                        data-id="input-Slider-Sliderbutton"
+                                    />
+                                </div>
+                                <div id="area-input-Slider-Sliderbutton" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 94px; height: 29px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="0" data-y="426" data-id="block-ueberuns">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-ueberuns" data-id="block-ueberuns" value="ueberuns" />
+                                        <label class="form-check-label ml-2 pt-1" for="block-ueberuns">Block Über uns</label>
+                                    </div>
+                                    <div id="area-block-ueberuns" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 279px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-ueberuns-ueberuns-titel">Über uns Title:</label>
+                                    <input
+                                        class="form-control input-highlighter block-ueberuns--input"
+                                        type="text"
+                                        id="input-ueberuns-ueberuns-titel"
+                                        name="input-ueberuns-ueberuns-titel"
+                                        data-x="67"
+                                        data-y="450"
+                                        data-id="input-ueberuns-ueberuns-titel"
+                                    />
+                                </div>
+                                <div id="area-input-ueberuns-ueberuns-titel" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 333px; height: 48px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-ueberuns-ueberuns-untertitel">Über uns Untertitel:</label>
+                                    <input
+                                        class="form-control input-highlighter block-ueberuns--input"
+                                        type="text"
+                                        id="input-ueberuns-ueberuns-untertitel"
+                                        name="input-ueberuns-ueberuns-untertitel"
+                                        data-x="67"
+                                        data-y="498"
+                                        data-id="input-ueberuns-ueberuns-untertitel"
+                                    />
+                                </div>
+                                <div id="area-input-ueberuns-ueberuns-untertitel" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 333px; height: 29px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-ueberuns-ueberuns-content">Text:</label>
+                                    <textarea
+                                        class="form-control input-highlighter block-ueberuns--input"
+                                        id="input-ueberuns-ueberuns-content"
+                                        name="input-ueberuns-ueberuns-content"
+                                        data-x="67"
+                                        data-y="527"
+                                        data-id="input-ueberuns-ueberuns-content"
+                                        style="width: 100%;"
+                                        rows="4"
+                                    ></textarea>
+                                </div>
+                                <div id="area-input-ueberuns-ueberuns-content" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 333px; height: 167px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="0" data-y="705" data-id="block-ueberunsunten">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-ueberunsunten" data-id="block-ueberunsunten" value="ueberunsunten" />
+                                        <label class="form-check-label ml-2 pt-1" for="block-ueberunsunten">Block Konzept</label>
+                                    </div>
+                                    <div id="area-block-ueberunsunten" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 199px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-ueberunsunten-ueberuns-titel-1">Über uns Title 1:</label>
+                                    <input
+                                        class="form-control input-highlighter block-ueberunsunten--input"
+                                        type="text"
+                                        id="input-ueberunsunten-ueberuns-titel-1"
+                                        name="input-ueberunsunten-ueberuns-titel-1"
+                                        data-x="79"
+                                        data-y="788"
+                                        data-id="input-ueberunsunten-ueberuns-titel-1"
+                                    />
+                                </div>
+                                <div id="area-input-ueberunsunten-ueberuns-titel-1" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 196px; height: 27px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-ueberunsunten-ueberuns-content-1">Über uns Kurzbeschreibung:</label>
+                                    <input
+                                        class="form-control input-highlighter block-ueberunsunten--input"
+                                        type="text"
+                                        id="input-ueberunsunten-ueberuns-content-1"
+                                        name="input-ueberunsunten-ueberuns-content-1"
+                                        data-x="79"
+                                        data-y="815"
+                                        data-id="input-ueberunsunten-ueberuns-content-1"
+                                    />
+                                </div>
+                                <div id="area-input-ueberunsunten-ueberuns-content-1" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 196px; height: 53px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-ueberunsunten-ueberuns-titel-2">Über uns Title 2:</label>
+                                    <input
+                                        class="form-control input-highlighter block-ueberunsunten--input"
+                                        type="text"
+                                        id="input-ueberunsunten-ueberuns-titel-2"
+                                        name="input-ueberunsunten-ueberuns-titel-2"
+                                        data-x="303"
+                                        data-y="788"
+                                        data-id="input-ueberunsunten-ueberuns-titel-2"
+                                    />
+                                </div>
+                                <div id="area-input-ueberunsunten-ueberuns-titel-2" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 196px; height: 27px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-ueberunsunten-ueberuns-content-2">Über uns Kurzbeschreibung:</label>
+                                    <input
+                                        class="form-control input-highlighter block-ueberunsunten--input"
+                                        type="text"
+                                        id="input-ueberunsunten-ueberuns-content-2"
+                                        name="input-ueberunsunten-ueberuns-content-2"
+                                        data-x="303"
+                                        data-y="815"
+                                        data-id="input-ueberunsunten-ueberuns-content-2"
+                                    />
+                                </div>
+                                <div id="area-input-ueberunsunten-ueberuns-content-2" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 196px; height: 53px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-ueberunsunten-ueberuns-titel-3">Über uns Title 3:</label>
+                                    <input
+                                        class="form-control input-highlighter block-ueberunsunten--input"
+                                        type="text"
+                                        id="input-ueberunsunten-ueberuns-titel-3"
+                                        name="input-ueberunsunten-ueberuns-titel-3"
+                                        data-x="521"
+                                        data-y="788"
+                                        data-id="input-ueberunsunten-ueberuns-titel-3"
+                                    />
+                                </div>
+                                <div id="area-input-ueberunsunten-ueberuns-titel-3" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 196px; height: 27px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-ueberunsunten-ueberuns-content-3">Über uns Kurzbeschreibung:</label>
+                                    <input
+                                        class="form-control input-highlighter block-ueberunsunten--input"
+                                        type="text"
+                                        id="input-ueberunsunten-ueberuns-content-3"
+                                        name="input-ueberunsunten-ueberuns-content-3"
+                                        data-x="521"
+                                        data-y="815"
+                                        data-id="input-ueberunsunten-ueberuns-content-3"
+                                    />
+                                </div>
+                                <div id="area-input-ueberunsunten-ueberuns-content-3" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 196px; height: 53px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="0" data-y="948" data-id="block-services">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-services" data-id="block-services" value="services" />
+                                        <label class="form-check-label ml-2 pt-1" for="block-services">Block Leistungen</label>
+                                    </div>
+                                    <div id="area-block-services" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 545px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-beschreibung">Kurz und knapp. Alle Leistungen in der Übersicht:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-beschreibung"
+                                        name="input-services-services-beschreibung"
+                                        data-x="193"
+                                        data-y="1027"
+                                        data-id="input-services-services-beschreibung"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-beschreibung" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 406px; height: 27px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-tile-1">Services Tile 1:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-tile-1"
+                                        name="input-services-services-tile-1"
+                                        data-x="79"
+                                        data-y="1154"
+                                        data-id="input-services-services-tile-1"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-tile-1" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 30px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-beschreibung-1">Kurzbeschreibung 1:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-beschreibung-1"
+                                        name="input-services-services-beschreibung-1"
+                                        data-x="79"
+                                        data-y="1184"
+                                        data-id="input-services-services-beschreibung-1"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-beschreibung-1" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 35px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-tile-2">Services Tile 2:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-tile-2"
+                                        name="input-services-services-tile-2"
+                                        data-x="298"
+                                        data-y="1154"
+                                        data-id="input-services-services-tile-2"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-tile-2" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 30px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-beschreibung-2">Kurzbeschreibung 2:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-beschreibung-2"
+                                        name="input-services-services-beschreibung-2"
+                                        data-x="298"
+                                        data-y="1184"
+                                        data-id="input-services-services-beschreibung-2"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-beschreibung-2" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 35px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-tile-3">Services Tile 3:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-tile-3"
+                                        name="input-services-services-tile-3"
+                                        data-x="520"
+                                        data-y="1154"
+                                        data-id="input-services-services-tile-3"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-tile-3" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 30px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-beschreibung-3">Kurzbeschreibung 3:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-beschreibung-3"
+                                        name="input-services-services-beschreibung-3"
+                                        data-x="520"
+                                        data-y="1184"
+                                        data-id="input-services-services-beschreibung-3"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-beschreibung-3" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 35px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-tile-4">Services Tile 4:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-tile-4"
+                                        name="input-services-services-tile-4"
+                                        data-x="78"
+                                        data-y="1365"
+                                        data-id="input-services-services-tile-4"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-tile-4" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 30px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-beschreibung-4">Kurzbeschreibung 4:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-beschreibung-4"
+                                        name="input-services-services-beschreibung-4"
+                                        data-x="78"
+                                        data-y="1392"
+                                        data-id="input-services-services-beschreibung-4"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-beschreibung-4" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 35px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-tile-5">Services Tile 5:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-tile-5"
+                                        name="input-services-services-tile-5"
+                                        data-x="298"
+                                        data-y="1365"
+                                        data-id="input-services-services-tile-5"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-tile-5" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 30px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-beschreibung-5">Kurzbeschreibung 5:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-beschreibung-5"
+                                        name="input-services-services-beschreibung-5"
+                                        data-x="298"
+                                        data-y="1392"
+                                        data-id="input-services-services-beschreibung-5"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-beschreibung-5" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 35px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-tile-6">Services Tile 6:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-tile-6"
+                                        name="input-services-services-tile-6"
+                                        data-x="520"
+                                        data-y="1365"
+                                        data-id="input-services-services-tile-6"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-tile-6" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 30px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-services-services-beschreibung-6">Kurzbeschreibung 6:</label>
+                                    <input
+                                        class="form-control input-highlighter block-services--input"
+                                        type="text"
+                                        id="input-services-services-beschreibung-6"
+                                        name="input-services-services-beschreibung-6"
+                                        data-x="520"
+                                        data-y="1392"
+                                        data-id="input-services-services-beschreibung-6"
+                                    />
+                                </div>
+                                <div id="area-input-services-services-beschreibung-6" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 199px; height: 35px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="0" data-y="1494" data-id="block-Slider2">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-Slider2" data-id="block-Slider2" value="Slider2" disabled />
+                                        <label class="form-check-label ml-2 pt-1" for="block-Slider2">Block Slider kontent</label>
+                                    </div>
+                                    <div id="area-block-Slider2" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 181px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-Slider2-Slidertitel2">Titel:</label>
+                                    <input
+                                        class="form-control input-highlighter block-Slider2--input"
+                                        type="text"
+                                        id="input-Slider2-Slidertitel2"
+                                        name="input-Slider2-Slidertitel2"
+                                        data-x="149"
+                                        data-y="1545"
+                                        data-id="input-Slider2-Slidertitel2"
+                                    />
+                                </div>
+                                <div id="area-input-Slider2-Slidertitel2" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 498px; height: 25px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-Slider2-Slideruntertitel2">Untertitel:</label>
+                                    <input
+                                        class="form-control input-highlighter block-Slider2--input"
+                                        type="text"
+                                        id="input-Slider2-Slideruntertitel2"
+                                        name="input-Slider2-Slideruntertitel2"
+                                        data-x="149"
+                                        data-y="1567"
+                                        data-id="input-Slider2-Slideruntertitel2"
+                                    />
+                                </div>
+                                <div id="area-input-Slider2-Slideruntertitel2" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 498px; height: 25px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-Slider2-Sliderbutton2">Name des buttons:</label>
+                                    <input
+                                        class="form-control input-highlighter block-Slider2--input"
+                                        type="text"
+                                        id="input-Slider2-Sliderbutton2"
+                                        name="input-Slider2-Sliderbutton2"
+                                        data-x="357"
+                                        data-y="1600"
+                                        data-id="input-Slider2-Sliderbutton2"
+                                    />
+                                </div>
+                                <div id="area-input-Slider2-Sliderbutton2" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 85px; height: 22px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="0" data-y="1688" data-id="block-team">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-team" data-id="block-team" value="team" />
+                                        <label class="form-check-label ml-2 pt-1" for="block-team">Block TEAM</label>
+                                    </div>
+                                    <div id="area-block-team" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 356px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-team-teambeschreibung">Team Untertitel:</label>
+                                    <input
+                                        class="form-control input-highlighter block-team--input"
+                                        type="text"
+                                        id="input-team-teambeschreibung"
+                                        name="input-team-teambeschreibung"
+                                        data-x="75"
+                                        data-y="1736"
+                                        data-id="input-team-teambeschreibung"
+                                    />
+                                </div>
+                                <div id="area-input-team-teambeschreibung" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 647px; height: 29px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-team-team-tile-1">Name:</label>
+                                    <input class="form-control input-highlighter block-team--input" type="text" id="input-team-team-tile-1" name="input-team-team-tile-1" data-x="75" data-y="1917" data-id="input-team-team-tile-1" />
+                                </div>
+                                <div id="area-input-team-team-tile-1" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 205px; height: 17px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-team-position1">Position:</label>
+                                    <input class="form-control input-highlighter block-team--input" type="text" id="input-team-position1" name="input-team-position1" data-x="75" data-y="1933" data-id="input-team-position1" />
+                                </div>
+                                <div id="area-input-team-position1" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 205px; height: 12px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-team-position-beschreibung1">Kurzbeschreibung:</label>
+                                    <input
+                                        class="form-control input-highlighter block-team--input"
+                                        type="text"
+                                        id="input-team-position-beschreibung1"
+                                        name="input-team-position-beschreibung1"
+                                        data-x="75"
+                                        data-y="1945"
+                                        data-id="input-team-position-beschreibung1"
+                                    />
+                                </div>
+                                <div id="area-input-team-position-beschreibung1" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 205px; height: 49px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-team-team-tile-2">Name:</label>
+                                    <input class="form-control input-highlighter block-team--input" type="text" id="input-team-team-tile-2" name="input-team-team-tile-2" data-x="297" data-y="1917" data-id="input-team-team-tile-2" />
+                                </div>
+                                <div id="area-input-team-team-tile-2" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 205px; height: 17px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-team-position2">Position:</label>
+                                    <input class="form-control input-highlighter block-team--input" type="text" id="input-team-position2" name="input-team-position2" data-x="297" data-y="1933" data-id="input-team-position2" />
+                                </div>
+                                <div id="area-input-team-position2" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 205px; height: 12px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-team-position-beschreibung2">Kurzbeschreibung:</label>
+                                    <input
+                                        class="form-control input-highlighter block-team--input"
+                                        type="text"
+                                        id="input-team-position-beschreibung2"
+                                        name="input-team-position-beschreibung2"
+                                        data-x="297"
+                                        data-y="1945"
+                                        data-id="input-team-position-beschreibung2"
+                                    />
+                                </div>
+                                <div id="area-input-team-position-beschreibung2" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 205px; height: 49px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-team-team-tile-3">Name:</label>
+                                    <input class="form-control input-highlighter block-team--input" type="text" id="input-team-team-tile-3" name="input-team-team-tile-3" data-x="519" data-y="1917" data-id="input-team-team-tile-3" />
+                                </div>
+                                <div id="area-input-team-team-tile-3" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 205px; height: 17px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-team-position3">Position:</label>
+                                    <input class="form-control input-highlighter block-team--input" type="text" id="input-team-position3" name="input-team-position3" data-x="519" data-y="1933" data-id="input-team-position3" />
+                                </div>
+                                <div id="area-input-team-position3" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 205px; height: 12px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-team-position-beschreibung3">Kurzbeschreibung:</label>
+                                    <input
+                                        class="form-control input-highlighter block-team--input"
+                                        type="text"
+                                        id="input-team-position-beschreibung3"
+                                        name="input-team-position-beschreibung3"
+                                        data-x="519"
+                                        data-y="1945"
+                                        data-id="input-team-position-beschreibung3"
+                                    />
+                                </div>
+                                <div id="area-input-team-position-beschreibung3" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 205px; height: 49px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="0" data-y="2044" data-id="block-kontakt">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-kontakt" data-id="block-kontakt" value="kontakt" disabled />
+                                        <label class="form-check-label ml-2 pt-1" for="block-kontakt">Block KONTAKT</label>
+                                    </div>
+                                    <div id="area-block-kontakt" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 436px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-kontakt-untertitel">Block Kontakt - Untertitel:</label>
+                                    <input class="form-control input-highlighter block-kontakt--input" type="text" id="input-kontakt-untertitel" name="input-kontakt-untertitel" data-x="75" data-y="2090" data-id="input-kontakt-untertitel" />
+                                </div>
+                                <div id="area-input-kontakt-untertitel" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 647px; height: 28px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-kontakt-strasse">Strasse und Hausnummer:</label>
+                                    <input class="form-control input-highlighter block-kontakt--input" type="text" id="input-kontakt-strasse" name="input-kontakt-strasse" data-x="75" data-y="2190" data-id="input-kontakt-strasse" />
+                                </div>
+                                <div id="area-input-kontakt-strasse" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 312px; height: 25px;"></div>
+                                <div class="mb-2 form-group">
+                                    <label for="input-kontakt-plz-stadt">PLZ Stadt:</label>
+                                    <input class="form-control input-highlighter block-kontakt--input" type="text" id="input-kontakt-plz-stadt" name="input-kontakt-plz-stadt" data-x="75" data-y="2190" data-id="input-kontakt-plz-stadt" />
+                                </div>
+                                <div id="area-input-kontakt-plz-stadt" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 312px; height: 25px;"></div>
+                            </div>
+                            <div class="mb-4">
+                                <h5>
+                                    <div class="mb-2 form-check block-highlighter" data-x="0" data-y="2044" data-id="block-google">
+                                        <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-google" data-id="block-google" value="google" />
+                                        <label class="form-check-label ml-2 pt-1" for="block-google">Block Google Mapp</label>
+                                    </div>
+                                    <div id="area-block-google" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 436px;"></div>
+                                </h5>
+                                <div class="mb-2 form-group">
+                                    <label for="input-google-mapp">Google Mapp Link:</label>
+                                    <input class="form-control input-highlighter block-google--input" type="text" id="input-google-mapp" name="input-google-mapp" data-x="75" data-y="2239" data-id="input-google-mapp" />
+                                </div>
+                                <div id="area-input-google-mapp" class="input-highlight-area" style="position: absolute; left: 0; top: 0; width: 315px; height: 223px;"></div>
+                            </div>
+                            <p>
+                                </br>
+                            </p>
+                            <h4>Company Info, Rechnungsadresse</h4>
+
+                            <div class="form-group">
+                                <label for="company-name">Name:</label>
+                                <input class="form-control" type="text" name="impressum[company-name]" id="company-name" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company-address">Postal Address:</label>
+                                <textarea class="form-control" name="impressum[company-address]" id="company-address" rows="5"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company-www">Web-site Address:</label>
+                                <input class="form-control" name="impressum[company-www]" id="company-www" placeholder="https://" />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company-email">E-mail Address:</label>
+                                <input class="form-control" type="email" name="impressum[company-email]" id="company-email" />
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </aside>
+            </section>
+        </main>
+        <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: transparent; z-index: 9999; display: none;" class="disabled"></div>
+
+        <script src="http://www.5minutenwebseite.de/template/vendor/components/jquery/jquery.min.js"></script>
+        <script src="http://www.5minutenwebseite.de/template/vendor/components/jqueryui/jquery-ui.min.js"></script>
+        <script src="http://www.5minutenwebseite.de/template/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            function positionHighlightArea(id, x, y) {
+                $("#" + id).position({
+                    my: "left top",
+                    at: "left+" + x + " top+" + y,
+                    of: "#screenshot",
+                    collision: "none",
+                });
+            }
+
+            $(".input-highlighter")
+                .focus(function () {
+                    id = "area-" + $(this).data("id");
+                    $(".input-highlight-area").hide();
+                    $("#" + id).show();
+                    eval('positionHighlightArea("' + id + '",' + $(this).data("x") + "," + $(this).data("y") + ");");
+                })
+                .focusout(function () {
+                    $(".input-highlight-area").hide();
+                });
+            
+            $(".block-highlighter").on('click', function (e) {
+                e.preventDefault();
+                $('.disabled').show();
+                id = "area-" + $(this).data("id");
+                $(".input-highlight-area").hide();
+                let pos = $("#" + id).offset().top;
+                const scrollPos = pos + $("#" + id).offset().height;
+                const allPos = window.pageYOffset + document.documentElement.clientHeight;
+                const isView = window.pageYOffset < scrollPos && scrollPos < allPos;
+                if (isView) {
+                    $('.disabled').hide();
+                } else {
+                    $("#" + id).hide();
+                    $('html, body').animate({
+				        scrollTop: pos - 110
+			        }, {
+                        complete: () => {
+                            show(this);
+                            $('.disabled').hide();
+                            setTimeout(() => {
+                                // $("#" + id).hide();
+                            }, 1000);
+                        },
+                    }, 800);
+                }
+            })
+
+            $(".block-highlighter").hover(
+                function () {
+                    show(this);
+                },
+                function () {
+                    $(".block-highlight-area").hide();
+                }
+            );
+
+            $(".block-checkbox").change(function () {
+                id = $(this).data("id");
+                $("." + id + "--input").prop("disabled", !this.checked);
+            });
+
+            function show (el) {
+                id = "area-" + $(el).data("id");
+                $(".block-highlight-area").hide();
+                $("#" + id).show();
+                eval('positionHighlightArea("' + id + '",' + $(el).data("x") + "," + $(el).data("y") + ");");
+            }
+        </script>
+    </body>
+</html>
