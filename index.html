@@ -6,56 +6,11 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Erstellen Sie Ihre Website</title>
-        <link href="http://www.5minutenwebseite.de/template/vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="http://www.5minutenwebseite.de/template/vendor/components/font-awesome/css/fontawesome.min.css" rel="stylesheet" />
-        <link href="http://www.5minutenwebseite.de/template/vendor/components/font-awesome/css/brands.min.css" rel="stylesheet" />
-        <link href="http://www.5minutenwebseite.de/template/vendor/components/font-awesome/css/solid.min.css" rel="stylesheet" />
-        <style>
-            .red {
-                border: solid 1px red;
-            }
-            .input-highlight-area {
-                background-color: red;
-                opacity: 60%;
-                z-index: 20;
-                display: none;
-            }
-            .block-highlight-area {
-                background-color: mediumpurple;
-                opacity: 60%;
-                z-index: 10;
-                display: none;
-            }
-            label {
-                cursor: pointer;
-            }
-            form::-webkit-scrollbar { /* 1 - скроллбар */
-                width: 4px;
-                height: 4px;
-                background-color: #FFFFFF;
-            }
-
-            form::-webkit-scrollbar-button { /* 2 - кнопка */
-
-            }
-
-            form::-webkit-scrollbar-track { /* 3 - трек */
-            }
-
-            form::-webkit-scrollbar-track-piece { /* 4 - видимая часть трека */
-            }
-
-            form::-webkit-scrollbar-thumb { /* 5 - ползунок */
-                border-radius: 2px;
-                background-color: mediumpurple;
-            }
-
-            form::-webkit-scrollbar-corner { /* 6 - уголок */
-            }
-
-            form::-webkit-resizer { /* 7 - изменение размеров */
-            }
-        </style>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/fontawesome.min.css" rel="stylesheet"/>
+        <link href="css/brands.min.css" rel="stylesheet"/>
+        <link href="css/solid.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <main style="width: 1300px; margin: 20px auto; position: relative;">
@@ -70,7 +25,7 @@
                 </div>
                 <aside style="width: 480px; padding: 0; position: relative; height: auto;">
                     <div class="container-fluid" style="position:-webkit-sticky; position: sticky; top: 90px; width: inherit; height: calc(100vh - 135px);">
-                        <form method="post" style="overflow-y: scroll; height: inherit;" action="generate.php">
+                        <form method="post" style="overflow-y: scroll; height: inherit; padding: 0 10px" action="generate.php">
                             <input type="hidden" name="landing-id" value="My-DAY" />
 
                             <h3>Erstellen Sie Ihre Website</h3>
@@ -79,7 +34,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="67" data-y="24" data-id="block-Firma">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-Firma" data-id="block-Firma" value="Firma" disabled />
-                                        <label class="form-check-label ml-2 pt-1" for="block-Firma">Seitename</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-Firma">
+                                            <div class="checkbox grey">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Seitename</label>
+                                        <div class="more__info">Seitename</div>
+                                        <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-Firma" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 160px; height: 32px;"></div>
                                 </h5>
@@ -93,7 +54,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="328" data-y="23" data-id="block-menue">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-menue" data-id="block-menue" value="menue" disabled />
-                                        <label class="form-check-label ml-2 pt-1" for="block-menue">Menü</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-menue">
+                                            <div class="checkbox grey">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Menü</label>
+                                            <div class="more__info">Menü</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-menue" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 452px; height: 34px;"></div>
                                 </h5>
@@ -127,7 +94,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="58" data-y="0" data-id="block-info">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-info" data-id="block-info" value="info" disabled />
-                                        <label class="form-check-label ml-2 pt-1" for="block-info">Infoblock oben Links</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-info">
+                                            <div class="checkbox grey">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Infoblock oben Links</label>
+                                            <div class="more__info">Infoblock oben Links</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-info" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 255px; height: 22px;"></div>
                                 </h5>
@@ -146,7 +119,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="634" data-y="0" data-id="block-socialtwitter">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-socialtwitter" data-id="block-socialtwitter" value="socialtwitter" />
-                                        <label class="form-check-label ml-2 pt-1" for="block-socialtwitter">Twitter</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-socialtwitter">
+                                            <div class="checkbox checked">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Twitter</label>
+                                            <div class="more__info">Twitter</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-socialtwitter" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
                                 </h5>
@@ -168,7 +147,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="657" data-y="0" data-id="block-socialfacebook">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-socialfacebook" data-id="block-socialfacebook" value="socialfacebook" />
-                                        <label class="form-check-label ml-2 pt-1" for="block-socialfacebook">Facebook</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-socialfacebook">
+                                            <div class="checkbox checked">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Facebook</label>
+                                            <div class="more__info">Facebook</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-socialfacebook" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
                                 </h5>
@@ -190,7 +175,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="680" data-y="0" data-id="block-socialinstagram">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-socialinstagram" data-id="block-socialinstagram" value="socialinstagram" />
-                                        <label class="form-check-label ml-2 pt-1" for="block-socialinstagram">Instagram</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-socialinstagram">
+                                            <div class="checkbox checked">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Instagram</label>
+                                            <div class="more__info">Instagram</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-socialinstagram" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
                                 </h5>
@@ -212,7 +203,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="705" data-y="0" data-id="block-sociallinkedin">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-sociallinkedin" data-id="block-sociallinkedin" value="sociallinkedin" />
-                                        <label class="form-check-label ml-2 pt-1" for="block-sociallinkedin">Linkedin</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-sociallinkedin">
+                                            <div class="checkbox checked">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Linkedin</label>
+                                            <div class="more__info">Linkedin</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-sociallinkedin" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 23px; height: 22px;"></div>
                                 </h5>
@@ -234,7 +231,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="0" data-y="58" data-id="block-Slider">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-Slider" data-id="block-Slider" value="Slider" disabled />
-                                        <label class="form-check-label ml-2 pt-1" for="block-Slider">Block Slider</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-Slider">
+                                            <div class="checkbox grey">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Block Slider</label>
+                                            <div class="more__info">Block Slider</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-Slider" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 368px;"></div>
                                 </h5>
@@ -274,7 +277,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="0" data-y="426" data-id="block-ueberuns">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-ueberuns" data-id="block-ueberuns" value="ueberuns" />
-                                        <label class="form-check-label ml-2 pt-1" for="block-ueberuns">Block Über uns</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-ueberuns">
+                                            <div class="checkbox checked">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Block Über uns</label>
+                                            <div class="more__info">Block Über uns</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-ueberuns" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 279px;"></div>
                                 </h5>
@@ -323,7 +332,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="0" data-y="705" data-id="block-ueberunsunten">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-ueberunsunten" data-id="block-ueberunsunten" value="ueberunsunten" />
-                                        <label class="form-check-label ml-2 pt-1" for="block-ueberunsunten">Block Konzept</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-ueberunsunten">
+                                            <div class="checkbox checked">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Block Konzept</label>
+                                            <div class="more__info">Block Konzept</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-ueberunsunten" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 199px;"></div>
                                 </h5>
@@ -410,7 +425,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="0" data-y="948" data-id="block-services">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-services" data-id="block-services" value="services" />
-                                        <label class="form-check-label ml-2 pt-1" for="block-services">Block Leistungen</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-services">
+                                            <div class="checkbox checked">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Block Leistungen</label>
+                                            <div class="more__info">Block Leistungen</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-services" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 545px;"></div>
                                 </h5>
@@ -588,7 +609,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="0" data-y="1494" data-id="block-Slider2">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-Slider2" data-id="block-Slider2" value="Slider2" disabled />
-                                        <label class="form-check-label ml-2 pt-1" for="block-Slider2">Block Slider kontent</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-Slider2">
+                                            <div class="checkbox grey">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Block Slider kontent</label>
+                                            <div class="more__info">Block Slider kontent</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-Slider2" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 181px;"></div>
                                 </h5>
@@ -636,7 +663,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="0" data-y="1688" data-id="block-team">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-team" data-id="block-team" value="team" />
-                                        <label class="form-check-label ml-2 pt-1" for="block-team">Block TEAM</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-team">
+                                            <div class="checkbox checked">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Block TEAM</label>
+                                            <div class="more__info">Block TEAM</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-team" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 356px;"></div>
                                 </h5>
@@ -727,7 +760,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="0" data-y="2044" data-id="block-kontakt">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-kontakt" data-id="block-kontakt" value="kontakt" disabled />
-                                        <label class="form-check-label ml-2 pt-1" for="block-kontakt">Block KONTAKT</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-kontakt">
+                                            <div class="checkbox grey">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Block KONTAKT</label>
+                                            <div class="more__info">Block KONTAKT</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-kontakt" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 436px;"></div>
                                 </h5>
@@ -751,7 +790,13 @@
                                 <h5>
                                     <div class="mb-2 form-check block-highlighter" data-x="0" data-y="2044" data-id="block-google">
                                         <input type="checkbox" checked class="form-check-input block-checkbox" name="landing-blocks[]" id="block-google" data-id="block-google" value="google" />
-                                        <label class="form-check-label ml-2 pt-1" for="block-google">Block Google Mapp</label>
+                                        <label class="form-check-label ml-2 pt-1" for="block-google">
+                                            <div class="checkbox checked">
+                                                <div class="checkbox__check"></div>
+                                            </div>
+                                            Block Google Mapp</label>
+                                            <div class="more__info">Block Google Mapp</div>
+                                            <svg height="20" width="20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="mediumpurple" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path></svg>
                                     </div>
                                     <div id="area-block-google" class="block-highlight-area" style="position: absolute; left: 0; top: 0; width: 800px; height: 436px;"></div>
                                 </h5>
@@ -794,78 +839,9 @@
         </main>
         <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: transparent; z-index: 9999; display: none;" class="disabled"></div>
 
-        <script src="http://www.5minutenwebseite.de/template/vendor/components/jquery/jquery.min.js"></script>
-        <script src="http://www.5minutenwebseite.de/template/vendor/components/jqueryui/jquery-ui.min.js"></script>
-        <script src="http://www.5minutenwebseite.de/template/vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-        <script>
-            function positionHighlightArea(id, x, y) {
-                $("#" + id).position({
-                    my: "left top",
-                    at: "left+" + x + " top+" + y,
-                    of: "#screenshot",
-                    collision: "none",
-                });
-            }
-
-            $(".input-highlighter")
-                .focus(function () {
-                    id = "area-" + $(this).data("id");
-                    $(".input-highlight-area").hide();
-                    $("#" + id).show();
-                    eval('positionHighlightArea("' + id + '",' + $(this).data("x") + "," + $(this).data("y") + ");");
-                })
-                .focusout(function () {
-                    $(".input-highlight-area").hide();
-                });
-            
-            $(".block-highlighter").on('click', function (e) {
-                e.preventDefault();
-                $('.disabled').show();
-                id = "area-" + $(this).data("id");
-                $(".input-highlight-area").hide();
-                let pos = $("#" + id).offset().top;
-                const scrollPos = pos + $("#" + id).offset().height;
-                const allPos = window.pageYOffset + document.documentElement.clientHeight;
-                const isView = window.pageYOffset < scrollPos && scrollPos < allPos;
-                if (isView) {
-                    $('.disabled').hide();
-                } else {
-                    $("#" + id).hide();
-                    $('html, body').animate({
-				        scrollTop: pos - 110
-			        }, {
-                        complete: () => {
-                            show(this);
-                            $('.disabled').hide();
-                            setTimeout(() => {
-                                // $("#" + id).hide();
-                            }, 1000);
-                        },
-                    }, 800);
-                }
-            })
-
-            $(".block-highlighter").hover(
-                function () {
-                    show(this);
-                },
-                function () {
-                    $(".block-highlight-area").hide();
-                }
-            );
-
-            $(".block-checkbox").change(function () {
-                id = $(this).data("id");
-                $("." + id + "--input").prop("disabled", !this.checked);
-            });
-
-            function show (el) {
-                id = "area-" + $(el).data("id");
-                $(".block-highlight-area").hide();
-                $("#" + id).show();
-                eval('positionHighlightArea("' + id + '",' + $(el).data("x") + "," + $(el).data("y") + ");");
-            }
-        </script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
